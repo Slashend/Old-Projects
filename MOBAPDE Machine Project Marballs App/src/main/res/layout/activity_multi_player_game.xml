@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.dlsu.mobidev.gem.MultiPlayerGame">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_game">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="35dp"
+            android:text="Left"
+            android:id="@+id/bt_p2left"
+            android:src="@drawable/arrowleft"
+            android:background="@null"
+
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/bt_p2right"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrowright"
+            android:text="Right"
+            android:background="@null"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="35dp"
+            android:text="Left"
+            android:id="@+id/bt_p1left"
+            android:src="@drawable/arrowleft"
+            android:background="@null"
+
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/bt_p1right"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrowright"
+            android:text="Right"
+            android:background="@null"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

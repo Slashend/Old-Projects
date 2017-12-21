@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.dlsu.mobidev.gem.matchResultsSingle"
+    android:orientation="vertical"
+    android:background="@drawable/bgbattle">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Match Results"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difficulty:"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Remaining:"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Winner:"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score:"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/etDiffSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/etTimeSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/etWinSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/etScoreSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150,000"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Game Statistics"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/etHPBSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/etSSFBSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/etRateBSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18%"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remaining Hit Points"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Shots Fired"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hit Rate"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+
+
+        <TextView
+            android:id="@+id/etHPRSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/etSSFRSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/etRateRSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45%"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:id="@+id/buttonHomeSingle"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/nameHs"
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.16"
+            android:hint="Enter your name here"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:id="@+id/buttonAgain"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

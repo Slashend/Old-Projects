@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/bgbattle"
+    tools:context="edu.dlsu.mobidev.gem.highScoreActivity">
+
+    <TextView
+        android:id="@+id/titleHS"
+        android:layout_width="374dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.5"
+        android:textColor="#FFFFFF"
+        android:text="Single Player Records"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvWinHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Wins:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/etWinsHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLossHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Losses:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/etLossHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRateHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Win Rate:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/etRateHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99%"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvGamesHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Games:"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/etGamesHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5.5"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/title2HS"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Top Single Player High Scores" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/highscore_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/buttonHS"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="Back to Home" />
+    </LinearLayout>
+
+
+</LinearLayout>

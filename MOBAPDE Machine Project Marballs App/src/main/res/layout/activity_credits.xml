@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbattle"
+    android:orientation="vertical"
+    tools:context="edu.dlsu.mobidev.gem.credits">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:text="Credits"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/credits_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="440dp" />
+
+    <Button
+        android:id="@+id/button4Custom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="75dp"
+        android:layout_weight="1"
+        android:text="Back to Home" />
+
+</LinearLayout>

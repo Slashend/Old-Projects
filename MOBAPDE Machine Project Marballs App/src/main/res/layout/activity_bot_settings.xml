@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.dlsu.mobidev.gem.ActivityBotSettings"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bgbattle">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Game Settings"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="50sp"
+    />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficulty"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="25dp"/>
+
+            <Spinner
+                android:id="@+id/sp_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/difficulty"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Movement Mode"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"/>
+
+            <Spinner
+                android:id="@+id/sp_move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:entries="@array/movement"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="This bot is good for greatness"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/buttonBack"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/buttonFinish"
+            android:layout_marginEnd="10dp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

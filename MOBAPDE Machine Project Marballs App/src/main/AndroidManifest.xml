@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.dlsu.mobidev.gem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/specialball"
+        android:label="Marballs"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SinglePlayerGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".highScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".matchResultsMulti"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".matchResultsSingle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ActivityCustomizeBlue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityCustomizeSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityCustomizeSinglePlayer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityCustomizeRed"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MultiPlayerGame" />
+        <activity android:name=".ActivityBotSettings" />
+        <activity android:name=".ActivityStartScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityStartScreen2" />
+        <activity android:name=".ActivityStartScreen3" />
+        <activity android:name=".credits"></activity>
+    </application>
+
+</manifest>
